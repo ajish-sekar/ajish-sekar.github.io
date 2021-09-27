@@ -1,0 +1,249 @@
+.user-info{
+    width: 100%;
+    height: 450px;
+    padding: 24px;
+}
+
+.profile-pic{
+    width: 100%;
+}
+
+span.name{
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.menu{
+    margin-left: 8px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+a{
+    color: inherit;
+}
+
+.menu-item{
+    font-size: 18px;
+}
+
+main{
+    padding-top: 30px;
+}
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+@media only screen and (max-width : 992px) {
+header, main, footer {
+    padding-left: 0;
+}
+}
+
+.section-heading{
+    font-size: 36px;
+    color: #3d3dad
+}
+
+.content{
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.position-fixed{
+    position: fixed;
+}
+
+.table-of-contents a.active{
+    border-left: 2px solid #3d3dad !important;
+}
+
+.table-of-contents a:hover{
+    border-left: 1px solid #3d3dad ;
+}
+
+.chip-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.chip{
+    min-width: 80px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gap{
+    height: 28px;
+}
+
+.timeline {
+    border-left: 8px solid #3d3dad ;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(47, 60, 172, 0.726), 0 2px 10px 0 rgba(47, 60, 172, 0.726);
+    color: #333;
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    padding: 20px;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .timeline h1,
+  .timeline h2,
+  .timeline h3 {
+    font-size: 24px;
+    margin-left: 16px;
+  }
+
+  .timeline p {
+      margin-left: 16px;
+      font-size: 18px;
+  }
+  
+  .timeline .event {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  
+  .timeline .event:before,
+  .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  .timeline .event h3:before,
+  .timeline .event h3:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .event h3:before {
+    left: -185px;
+    color: #666565;
+    content: attr(data-date);
+    text-align: right;
+    /*  font-weight: 100;*/
+    
+    font-size: 24px;
+    font-style: italic;
+    min-width: 120px;
+  }
+  
+  .timeline .event:after {
+    box-shadow: 0 0 0 8px #3d3dad ;
+    left: -10px;
+    background: #212121;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+  }
+  /**/
+  /*——————————————
+  Responsive Stuff
+  ———————————————*/
+  
+  @media (max-width: 945px) {
+    .timeline .event h3::before {
+      content: '';
+      left: 0.5px;
+      top: 20px;
+      margin-top: 18px;
+      min-width: 0;
+      font-size: 24px;
+      margin-left: 16px;
+    }
+
+    .timeline .event h3::after {
+        position: relative;
+        display: block; 
+        
+        color: #666565;
+        content: attr(data-date);
+        text-align: left;
+        /*  font-weight: 100;*/
+        margin-top: 8px;
+        font-size: 24px;
+        font-style: italic;
+        min-width: 120px;
+    }
+
+    .timeline h3 {
+      font-size: 24px;
+    }
+    .timeline p {
+      padding-top: 25px;
+      font-size: 18px;
+    }
+    section.lab h3.card-title {
+      padding: 5px;
+      font-size: 16px
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline .event h3::before {
+      left: 0.5px;
+      content: '';
+      top: 20px;
+      margin-top: 18px;
+      min-width: 0;
+      font-size: 24px;
+    }
+
+    .timeline .event h3::after {
+        position: relative;
+        display: block; 
+        
+        color: #666565;
+        content: attr(data-date);
+        text-align: left;
+        /*  font-weight: 100;*/
+        margin-top: 8px;
+        font-size: 24px;
+        font-style: italic;
+        min-width: 120px;
+      }
+    .timeline .event:nth-child(1)::before,
+    .timeline .event:nth-child(3)::before,
+    .timeline .event:nth-child(5)::before {
+      top: 38px;
+    }
+    .timeline h3 {
+      font-size: 24px;
+    }
+    .timeline p {
+      padding-top: 8px;
+      font-size: 18px;
+    }
+  }
+
+  .card {
+      box-shadow: 0 2px 5px 0 rgba(47, 60, 172, 0.726), 0 2px 10px 0 rgba(47, 60, 172, 0.726);
+  }
